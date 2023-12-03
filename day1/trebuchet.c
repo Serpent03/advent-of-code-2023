@@ -12,12 +12,6 @@ struct fileP {
   int fileSize;
 };
 
-enum strNums {
-  ONE = 1,
-  TWO = 2,
-  THREE = 3
-};
-
 void string_slice(char* original, char* result, size_t start, size_t end) {
   // result str, original str with offset, number of chars to copy
   strncpy(result, original + start, end - start);
